@@ -11,5 +11,10 @@ return {
     opts = {
       keys = 'etovxqpdygfblzhckisuran'
     }
-  }
+  },
+
+  {
+    "nvim-lua/plenary.nvim",
+    name = "plenary"
+  },
 }

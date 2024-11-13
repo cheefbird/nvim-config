@@ -25,5 +25,5 @@ map("n", "<Leader>de", "<cmd>lua require'dap'.terminate()<CR>", { desc = "Debugg
 map("n", "<Leader>dr", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Debugger run last" })
 
 -- Hop
-map("n", "<Leader>ul", "<cmd>lua require'hop'.hint_lines()<CR>", { desc = "HopLine" })
-map("n", "<Leader>uw", "<cmd>lua require'hop'.hint_words()<CR>", { desc = "HopWords" })
+map("n", "<Leader>jl", "<cmd>lua require'hop'.hint_lines()<CR>", { desc = "HopLine" })
+map("n", "<Leader>jw", "<cmd>lua require'hop'.hint_words()<CR>", { desc = "HopWords" })
