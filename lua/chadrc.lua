@@ -4,16 +4,25 @@
 -- in nvim -> :h nviu for configs
 
 ---@type ChadrcConfig
-local M = {}
-
-M.base46 = {
-	theme = "onedark",
-}
-
-M.ui = {
-	statusline = {
-		theme = "vscode",
+local M = {
+	base46 = {
+		theme = "onedark",
+	},
+	ui = {
+		statusline = {
+			theme = "default",
+		}
 	}
 }
+
+-- M.base46 = {
+-- 	theme = "onedark",
+-- }
+
+-- M.ui = {
+-- 	statusline = {
+-- 		theme = "default",
+-- 	}
+-- }
 
 return M
