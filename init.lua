@@ -32,6 +32,10 @@ dofile(vim.g.base46_cache .. "statusline")
 require "options"
 require "nvchad.autocmds"
 
+vim.g.markdown_fenced_languages = {
+  "ts=typescript",
+}
+
 vim.schedule(function()
   require "mappings"
 end)
