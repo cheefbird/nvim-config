@@ -12,6 +12,7 @@ local servers = {
   ts_ls = {},
   jsonls = {},
   phpactor = {},
+  bashls = {},
   gopls = {
     cmd = { "gopls" },
     filetypes = { "go", "gomod", "gowork", "gotmpl" },
