@@ -7,6 +7,10 @@ local options = {
       -- lsp_format = "fallback"
     },
     sh = { "shfmt" },
+    javascript = { "prettierd" },
+    typescript = { "prettierd" },
+    html = { "prettierd" },
+
     -- css = { "prettier" },
     -- html = { "prettier" },
   },

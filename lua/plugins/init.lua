@@ -2,6 +2,18 @@ return {
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- format on save
+    cmd = { "ConformInfo" },
+    keys = {
+      {
+        -- Customize or remove this keymap to your liking
+        "<leader>fc",
+        function()
+          require("conform").format { async = true }
+        end,
+        mode = "",
+        desc = "Format buffer",
+      },
+    },
     opts = require "configs.conform",
   },
 
