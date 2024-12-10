@@ -6,9 +6,9 @@ local options = {
       command = "gofmt",
       -- lsp_format = "fallback"
     },
+    sh = { "shfmt" },
     -- css = { "prettier" },
     -- html = { "prettier" },
-
   },
   format_on_save = {
     -- These options will be passed to conform.format()

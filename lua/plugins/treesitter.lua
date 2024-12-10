@@ -16,6 +16,8 @@ return {
         "jsonc",
         "yaml",
         "bash",
+        "markdown",
+        "markdown_inline",
       },
     },
   },
