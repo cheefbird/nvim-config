@@ -10,7 +10,7 @@ local options = {
     javascript = { "prettierd" },
     typescript = { "prettierd" },
     html = { "prettierd" },
-
+    markdown = { "markdownlint" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
