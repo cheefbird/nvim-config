@@ -18,6 +18,7 @@ return {
         "bash",
         "markdown",
         "markdown_inline",
+        "swift",
       },
     },
   },

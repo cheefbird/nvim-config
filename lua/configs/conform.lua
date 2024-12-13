@@ -11,6 +11,7 @@ local options = {
     typescript = { "prettierd" },
     html = { "prettierd" },
     markdown = { "markdownlint" },
+    swift = { "swiftformat" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
