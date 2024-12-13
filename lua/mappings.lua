@@ -14,7 +14,12 @@ map("n", "<Leader>dl", "<cmd>lua require'dap'.step_into()<CR>", { desc = "Debugg
 map("n", "<Leader>dj", "<cmd>lua require'dap'.step_over()<CR>", { desc = "Debugger step over" })
 map("n", "<Leader>dk", "<cmd>lua require'dap'.step_out()<CR>", { desc = "Debugger step out" })
 map("n", "<Leader>dc", "<cmd>lua require'dap'.continue()<CR>", { desc = "Debugger continue" })
-map("n", "<Leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", { desc = "Debugger toggle breakpoint" })
+map(
+  "n",
+  "<Leader>db",
+  "<cmd>lua require'dap'.toggle_breakpoint()<CR>",
+  { desc = "Debugger toggle breakpoint" }
+)
 map(
   "n",
   "<Leader>dd",
@@ -27,3 +32,11 @@ map("n", "<Leader>dr", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Debugge
 -- Hop
 map("n", "<Leader>jl", "<cmd>lua require'hop'.hint_lines()<CR>", { desc = "HopLine" })
 map("n", "<Leader>jw", "<cmd>lua require'hop'.hint_words()<CR>", { desc = "HopWords" })
+
+-- Neogit
+map(
+  "n",
+  "gs",
+  "<cmd>lua require'neogit'.open({kind = 'floating'})<CR>",
+  { desc = "Neogit Open Floating " }
+)
