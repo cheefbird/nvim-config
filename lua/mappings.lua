@@ -40,3 +40,18 @@ map(
   "<cmd>lua require'neogit'.open({kind = 'floating'})<CR>",
   { desc = "Neogit Open Floating " }
 )
+
+-- Conform
+map("n", "<leader>fc", "<cmd>lua require'conform'.format { async = true }", { desc = "Format buffer" })
+
+
+
+-- {
+--         -- Customize or remove this keymap to your liking
+--         "<leader>fc",
+--         function()
+--           require("conform").format { async = true }
+--         end,
+--         mode = "",
+--         desc = "Format buffer",
+--       },

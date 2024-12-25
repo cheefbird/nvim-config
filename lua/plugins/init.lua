@@ -3,17 +3,6 @@ return {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- format on save
     cmd = { "ConformInfo" },
-    keys = {
-      {
-        -- Customize or remove this keymap to your liking
-        "<leader>fc",
-        function()
-          require("conform").format { async = true }
-        end,
-        mode = "",
-        desc = "Format buffer",
-      },
-    },
     opts = require "configs.conform",
   },
 
@@ -39,7 +28,7 @@ return {
   {
     "MeanderingProgrammer/render-markdown.nvim",
     dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" },
-    ft = "md",
+    ft = "markdown",
     opts = {},
     config = function()
       require("render-markdown").setup()
