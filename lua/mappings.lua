@@ -42,7 +42,7 @@ map(
 )
 
 -- Conform
-map("n", "<leader>fc", "<cmd>lua require'conform'.format { async = true }", { desc = "Format buffer" })
+map("n", "<leader>fc", "<cmd>lua require'conform'.format { async = true }<CR>", { desc = "Format buffer" })
 
 
 
