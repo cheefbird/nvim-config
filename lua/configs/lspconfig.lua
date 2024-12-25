@@ -8,7 +8,6 @@ local servers = {
   html = {},
   cssls = {},
   sourcekit = {},
-  -- denols = {},
   dockerls = {},
   ts_ls = {},
   jsonls = {},
