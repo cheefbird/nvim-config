@@ -1,5 +1,9 @@
 return {
   {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- format on save
     cmd = { "ConformInfo" },

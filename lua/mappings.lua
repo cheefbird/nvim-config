@@ -9,6 +9,12 @@ map("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
+-- Tmux Navigate
+map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "window left" })
+map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "window right" })
+map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "window down" })
+map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "window up" })
+
 -- Nvim DAP
 map("n", "<Leader>dl", "<cmd>lua require'dap'.step_into()<CR>", { desc = "Debugger step into" })
 map("n", "<Leader>dj", "<cmd>lua require'dap'.step_over()<CR>", { desc = "Debugger step over" })
@@ -42,9 +48,12 @@ map(
 )
 
 -- Conform
-map("n", "<leader>fc", "<cmd>lua require'conform'.format { async = true }<CR>", { desc = "Format buffer" })
-
-
+map(
+  "n",
+  "<leader>fc",
+  "<cmd>lua require'conform'.format { async = true }<CR>",
+  { desc = "Format buffer" }
+)
 
 -- {
 --         -- Customize or remove this keymap to your liking
