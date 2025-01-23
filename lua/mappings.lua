@@ -54,13 +54,3 @@ map(
   "<cmd>lua require'conform'.format { async = true }<CR>",
   { desc = "Format buffer" }
 )
-
--- {
---         -- Customize or remove this keymap to your liking
---         "<leader>fc",
---         function()
---           require("conform").format { async = true }
---         end,
---         mode = "",
---         desc = "Format buffer",
---       },
