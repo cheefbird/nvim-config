@@ -30,6 +30,9 @@ require("lazy").setup({
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
+-- clipboard
+-- vim.g.clipboard = unnamedplus
+
 require "options"
 require "nvchad.autocmds"
 
