@@ -1,3 +1,5 @@
+-- Plugins that don't need much configuration
+
 return {
   {
     "christoomey/vim-tmux-navigator",
@@ -36,6 +38,14 @@ return {
     opts = {},
     config = function()
       require("render-markdown").setup()
+    end,
+  },
+  {
+    "chentoast/marks.nvim",
+    event = "VeryLazy",
+    opts = {},
+    config = function()
+      require("marks").setup()
     end,
   },
 }
