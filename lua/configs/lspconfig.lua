@@ -6,6 +6,7 @@ local util = require "lspconfig/util"
 
 local servers = {
   html = {},
+  nixd = {},
   cssls = {},
   sourcekit = {},
   dockerls = {},

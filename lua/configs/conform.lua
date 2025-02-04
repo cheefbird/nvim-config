@@ -6,6 +6,7 @@ local options = {
       command = "gofmt",
       -- lsp_format = "fallback"
     },
+    nix = { "alejandra" },
     proto = { "buf" },
     sh = { "shfmt" },
     javascript = { "prettierd" },
