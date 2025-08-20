@@ -8,23 +8,8 @@ local servers = {
   html = {},
   nixd = {},
   cssls = {},
-  sourcekit = {
-    cmd = { "sourcekit-lsp" },
-    filetypes = { "swift", "objc", "objcpp", "c", "cpp" },
-    capabilities = {
-      textDocument = {
-        diagnostic = {
-          dynamicRegistration = true,
-          relatedDocumentSupport = true,
-        },
-      },
-      workspace = {
-        didChangeWatchedFiles = {
-          dynamicRegistration = true,
-        },
-      },
-    },
-  },
+  sourcekit = {},
+  starpls = {},
   dockerls = {},
   ts_ls = {},
   jsonls = {},
