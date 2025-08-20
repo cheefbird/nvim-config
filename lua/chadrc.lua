@@ -5,24 +5,14 @@
 
 ---@type ChadrcConfig
 local M = {
-	base46 = {
-		theme = "onedark",
-	},
-	ui = {
-		statusline = {
-			theme = "default",
-		}
-	}
+  base46 = {
+    theme = "doomchad",
+  },
+  ui = {
+    statusline = {
+      theme = "default",
+    },
+  },
 }
-
--- M.base46 = {
--- 	theme = "onedark",
--- }
-
--- M.ui = {
--- 	statusline = {
--- 		theme = "default",
--- 	}
--- }
 
 return M
