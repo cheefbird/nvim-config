@@ -9,6 +9,7 @@ local servers = {
   nixd = {},
   cssls = {},
   -- sourcekit = {},
+  starpls = {},
   dockerls = {},
   ts_ls = {},
   jsonls = {},
@@ -33,7 +34,9 @@ for name, opts in pairs(servers) do
   opts.on_attach = configs.on_attach
   opts.capabilities = configs.capabilities
 
-  require("lspconfig")[name].setup(opts)
+  vim.lsp.enable(name)
+  vim.lsp.config(name, opts)
+  -- require("lspconfig")[name].setup(opts)
 end
 
 -- LspAttach is where you enable features that only work
