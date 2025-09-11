@@ -16,6 +16,7 @@ local servers = {
   phpactor = {},
   bashls = {},
   buf_ls = {},
+  marksman = {},
   gopls = {
     cmd = { "gopls" },
     filetypes = { "go", "gomod", "gowork", "gotmpl" },

@@ -5,6 +5,7 @@ return {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- format on save
@@ -33,13 +34,15 @@ return {
 
   {
     "MeanderingProgrammer/render-markdown.nvim",
-    dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" },
-    ft = "markdown",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
     opts = {},
     config = function()
-      require("render-markdown").setup()
+      require("render-markdown").setup { completions = { lsp = { enabled = true } } }
     end,
   },
+
   {
     "chentoast/marks.nvim",
     event = "VeryLazy",
@@ -48,6 +51,7 @@ return {
       require("marks").setup()
     end,
   },
+
   {
     "alexander-born/bazel.nvim",
     dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
