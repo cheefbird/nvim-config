@@ -58,3 +58,11 @@ map(
   "<cmd>lua require'conform'.format { async = true }<CR>",
   { desc = "Format buffer" }
 )
+
+-- Render-Markdown
+map(
+  "n",
+  "<Leader>rm",
+  "<cmd>lua require'render-markdown'.toggle()<CR>",
+  { desc = "Render Markdown: Toggle" }
+)
