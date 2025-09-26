@@ -66,3 +66,6 @@ map(
   "<cmd>lua require'render-markdown'.toggle()<CR>",
   { desc = "Render Markdown: Toggle" }
 )
+
+-- Codex
+map("n", "<Leader>cc", "<cmd>lua require'codex'.toggle()<cr>", { desc = "Toggle Codex popup" })
