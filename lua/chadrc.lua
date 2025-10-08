@@ -6,7 +6,7 @@
 ---@type ChadrcConfig
 local M = {
   base46 = {
-    theme = "doomchad",
+    theme = "onedark",
   },
   ui = {
     statusline = {
