@@ -6,7 +6,7 @@
 ---@type ChadrcConfig
 local M = {
   base46 = {
-    theme = "onedark",
+    theme = "bearded-arc",
   },
   ui = {
     statusline = {
