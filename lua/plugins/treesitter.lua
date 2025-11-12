@@ -18,8 +18,8 @@ return {
         "bash",
         "markdown",
         "markdown_inline",
-        "swift",
-        "proto"
+        -- "swift",
+        "proto",
       },
     },
   },
